@@ -2,42 +2,35 @@ body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
 }
-.search-field {
-  border: none;
-  border-radius: 50px;
-  padding: 5px;
-  outline: none;
+/* search field style  */
+.search-button{
+  background-color: blue !important;
+  color: white !important;
 }
-.search-field:hover {
-  outline: none;
-  border: none;
-}
-.search-box {
-  border: 1px solid rgb(3, 118, 211);
-  width: 281px;
-  border-radius: 5px;
-  margin: auto;
-  margin-top: 50px;
-  border-right: none;
-}
-.search-button {
-  padding: 10px 50px;
-  border-radius: 25px;
-  margin-left: 20px;
-}
+
+/* all product style  */
 #all-products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* border: 1px solid black; */
+  
   text-align: center;
   width: 100%;
   margin: auto;
   align-items: center;
   justify-content: center;
+  background-color: turquoise;
 }
+/* single product  */
 .single-product {
   padding: 10px;
   transition: 0.6s;
+  border: 1px solid black;
+  height: 650px;
+ 
+}
+/* peoples ratings and average ratings style  */
+.ratings{
+  color: blue;
 }
 .single-product:hover {
   box-shadow: 4px 4px 7px gray;
@@ -59,6 +52,12 @@ body {
 }
 .cart-main {
   padding-right: 30px;
+}
+#addToCart-btn{
+  background-color: tomato;
+}
+#details-btn{
+  background-color: #E67A00;
 }
 @media only screen and (max-width: 768px) {
   #all-products {
